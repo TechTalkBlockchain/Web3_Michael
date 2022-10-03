@@ -8,7 +8,11 @@
 </head>
 <body>
     <script>
-        console.log("Hi")
+        
+        if (typeof window.etheruem !== undefined){
+
+            etheruem.request({method:"eth_requestAccounts"});
+        }
     </script>
 </body>
 </html>
